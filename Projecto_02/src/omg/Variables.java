@@ -2,6 +2,9 @@ package omg;
 
 public class Variables {
 	public static void main (String[] args)throws Exception{
+		
+		//variables primitivas
+		
 		int numero1 = 10;
 		double numero2;
 		numero2 = 3.14D; //Se pone la D o d al final al declarar un double
@@ -27,6 +30,45 @@ public class Variables {
 		System.out.println(caracter1);
 		System.out.println(caracter2);
 		System.out.println(opcion);
+		
+		//Variables de referencia
+		
+		String mensaje, mensaje2;
+		mensaje="Esto es una pillamada real";
+		mensaje2="""
+				Este 
+				es 
+				un 
+				mensaje 
+				multilinea 
+				omg :OOOO
+				""";
+		System.out.println(mensaje);
+		System.out.println(mensaje2);
+		System.out.println(mensaje+" "+numero1);
+		System.out.println(mensaje.toUpperCase());
+		
+		//Wrappers 
+		
+		String numero1_string=Integer.toString(numero1);
+		System.out.println(mensaje.concat(numero1_string));
+		
+		//Variable general
+		
+		var variable1=15;
+		var variable2='E';
+		var variable3=12.12;
+
+		System.out.println(variable1);
+		System.out.println(variable2);
+		System.out.println(variable3);
+
+		//Sintaxis para asignar constantes
+		
+		final var PI=3.141632; 
+		System.out.println(PI);
+
+				
 	}
 
 }
